@@ -1,0 +1,24 @@
+body {
+  cursor: crosshair;
+  background-image: url(https://lh3.googleusercontent.com/0R0Tn9JuWoBDVhL5Emn2ZmISPInIQSS8K2YoFoTG-_xnUREbHto6NSFSdTL9J4IzG4roiWGq0JFrRb0BDyGCtzbSeYVy63kyqxkxYRP5CQfEWwOC2K3j0-d5myW6JF1vu6xMdqShe06aPmDDRcKrHHySTalW6ecQhC2p8kTJ8slg9j1-e5wsKqqnVLPxBLR1BjgSxLBe1ELXYSCJaSlBv8nkZXKoVuADmtxMWylUFSE4YYiIKbvrMnNYRR907_Hd7NcGsDht2dmJoFrI7Aoyhm6jYN2zNq1i4SVeBbI7VUBra8wMVuC0G8_y0gE1I_lOSGmknlcUom8ss1vmw8ClTOssUVXPAYP-av2XVIpSB1ms1w8obZrrG0mULWazfO4t7VoOcX9j0AYsZzMycYvPG8Yn0aUNm4kpx2Dok6a_lbzre108SG4Z2-0RBNShI1VaRhEnEsy5Zx9WRjtMagrlgPn8vaHrATTd0dnrgFTRVRpo3awgfSF4ffWyliF2w7NDYF91y-B23QdfhX50zKS7ilur99xzx8DFYM77rOhO_MIPSpYbr8aV2fioOIsehfeOBAh1G4MIRfub0WOZWBKuT4-cLaWGL92UuKsVGxh1lR34P6nojMTZ3dwb47CW5vrZ5TfxAm1Mac_dDDAE7XBFeqaIG0FOcRe-KgUyQ7voj2sa-0xdMnHVTw2c7cyYhmc=s328-no);
+}
+
+.top-bar {
+  height: 10%;
+  width: 100%;
+  background-color: #051255;
+
+}
+.top-bar h1{
+  color: #ffffff;
+  text-align: center;
+}
+
+#jpg02 {
+  /* margin: auto;
+  display: block; */
+}
+p {
+  font-size: 25px;
+  font-family: fantasy;;
+}
