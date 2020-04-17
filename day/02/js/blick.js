@@ -7,14 +7,8 @@ var colors = new Array(
   [255, 128, 0]);
 
 var step = 0;
-//color table indices for:
-// current color left
-// next color left
-// current color right
-// next color right
-var colorIndices = [0, 1, 2, 3];
 
-//transition speed
+var colorIndices = [0, 1, 2, 3];
 var gradientSpeed = 0.002;
 
 function updateGradient() {
@@ -49,8 +43,6 @@ function updateGradient() {
     colorIndices[0] = colorIndices[1];
     colorIndices[2] = colorIndices[3];
 
-    //pick two new target color indices
-    //do not pick the same as the current one
     colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
     colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
 

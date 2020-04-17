@@ -1,5 +1,5 @@
-# Website_exercises_Day30
-前端訓練 Day30
+# Website_exercises_Day100
+前端訓練 Day100
 
 我從未接觸過前端，也沒有學過RWD切版或是任何套件
 
