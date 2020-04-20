@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <p id="computerPlayer_"></p>
+  <p id="userPlayer_"></p>
+  <p id="End"></p>
+
+
+  <button onclick="Try(1)">剪刀</button>
+  <button onclick="Try(2)">石頭</button>
+  <button onclick="Try(3)">-布-</button>
+
+  <script>
+    var myNumber;
+    //rook
+
+    //1 = 剪刀
+    //2 = 石頭
+    //3 = 布
+    function Try(x) {
+      Bicth(x);
+
+    }
+
+    function Bicth(x) {
+      // computerPlayer
+      // userPlayer
+      userPlayer = x;
+      var computerPlayer = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+
+      switch (computerPlayer) {
+        case 1:
+          document.getElementById("computerPlayer_").innerHTML = "電腦出：" + '剪刀';
+          break;
+
+        case 2:
+          document.getElementById("computerPlayer_").innerHTML = "電腦出：" + '石頭';
+
+          break;
+        case 3:
+          document.getElementById("computerPlayer_").innerHTML = "電腦出：" + '布';
+
+          break;
+        default:
+
+      }
+
+      switch (userPlayer) {
+        case 1:
+          document.getElementById("userPlayer_").innerHTML = "你選擇：" + '剪刀';
+          break;
+
+        case 2:
+          document.getElementById("userPlayer_").innerHTML = "你選擇：" + '石頭';
+
+          break;
+        case 3:
+          document.getElementById("userPlayer_").innerHTML = "你選擇：" + '布';
+
+          break;
+        default:
+
+      }
+
+      if (computerPlayer == userPlayer) {
+        document.getElementById("End").innerHTML = '平手';
+
+      } else if (computerPlayer != userPlayer) {
+
+        if (userPlayer == 1 && computerPlayer == 3 || userPlayer == 2 && computerPlayer == 1 || userPlayer == 3 && computerPlayer == 2) {
+          document.getElementById("End").innerHTML = '你贏了';
+        } else {
+          document.getElementById("End").innerHTML = '你輸了';
+        }
+
+      }
+
+
+    }
+  </script>
+
+</body>
+
+</html>
