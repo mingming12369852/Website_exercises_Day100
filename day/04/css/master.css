@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "RiiT_F";
+  src: url(RiiT_F.otf);
+}
+
+html,
+body {
+  font-family: 'RiiT_F';
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#midCanvas {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+#data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 400%;
+}
+
+a:link {
+  color: rgb(70, 70, 70);
+  text-decoration: none;
+}
