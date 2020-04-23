@@ -1,0 +1,46 @@
+
+@keyframes identifier {
+  0% {
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 167, 150);
+  }
+
+  25% {
+    margin-top: 0px;
+    margin-left: 100px;
+    background-color: rgb(152, 62, 199);
+  }
+
+  50% {
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: rgb(184, 106, 78);
+  }
+
+  75% {
+    margin-top: 100px;
+    margin-left: 0px;
+    background-color: rgb(252, 209, 33);
+  }
+
+  100% {
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: rgb(61, 222, 54);
+  }
+}
+
+.XD {
+  height: 500px;
+  margin: auto;
+  display: flow-root;
+
+}
+
+#MidDiv {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(42, 96, 70);
+  animation: identifier 4s ease 0s infinite;
+}

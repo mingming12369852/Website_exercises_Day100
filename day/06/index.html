@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <head http-equiv="Content-Security-Policy" content="block-all-mixed-content">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <style media="screen">
+      @keyframes donw {
+        0% {
+          margin-top: 0;
+          background-color: rgb(245, 240, 113);
+        }
+
+        100% {
+          margin-top: 100px;
+          background-color: rgba(133, 133, 133, 0);
+        }
+      }
+
+
+      #snow {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(177, 177, 177);
+        animation: donw 5s ease 0s infinite;
+      }
+    </style>
+  </head>
+
+
+<body>
+  <script type="text/javascript">
+    var x, y;
+    x = Math.random(10 - 1) * 10;
+    // console.log(x);
+    $('#MidDiv').click(function() {
+      x = Math.random(10 - 1) * 1000;
+      console.log(x);
+      $('#snow').css({
+        "margin-left": x + "px";
+      });
+      $('body').append('<div id="snow" style="margin-left: ' + x + ' + px"></div>');
+
+
+      // alert('Surprise!!');
+    });
+
+    $(function() {
+      var w = window.screen.width;
+
+      var snow = function() {
+        this.v = Math.random() * 1 + 0.5;
+        this.left = Math.random() * w;
+      }
+      snow.prototpye = {
+        constructor: sonw,
+        newMe: function() {
+          $('body').append('<div id="snow"></div>');
+
+        },
+        addCss: function() {
+          $('#snow:last').css({
+            "margin-left": this.left + 'px';
+          })
+        },
+        moveMe: function() {
+          var time = Math.Foor(h / this.v);
+
+        }
+
+      }
+    });
+  </script>
+
+</body>
+
+</html>

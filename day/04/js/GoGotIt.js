@@ -16,6 +16,4 @@
         background: "linear-gradient(" + text + ",rgb(207, 138, 153),rgb(125, 167, 172))"
       });
     }
-
-
   }
